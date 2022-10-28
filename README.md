@@ -1,8 +1,8 @@
-INSERT MANDATORY GIF
+![](https://media2.giphy.com/media/10kxE34bJPaUO4/giphy.gif?cid=790b7611ef6c22fa06ea1e13cdf8e2fb732b5dcfffe8454a&rid=giphy.gif&ct=g)
 
-# Project Title
 
 Text about the project and why it exists. This would also be a great place to link the project on One.com.
+My first little php project
 
 # Installation
 
