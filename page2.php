@@ -1,13 +1,10 @@
 <?php
+include "head.php";
+include "arrays.php";
 
-declare(strict_types=1);
-require_once "head.php"; // Load head.php
-require_once "arrays.php";  // Load arrays.php
+$inputName = $_SESSION["name"];
+$inputName = strtoupper($inputName);
 
-$inputName = $_SESSION["name"]; // Defining a variable from the array $_SESSION
-$inputName = strtoupper($inputName); // Printing it Uppercase
-
-// Greetings array, random quote shuffled to h1 html tag
 $greetings = [
     "OUI $inputName, YOU PIZZACCISST!",
     "HEY THERE! $inputName SEXY BAKER!",
@@ -15,8 +12,6 @@ $greetings = [
     "MAMA MIA, FORNAIO $inputName FUNGI PIZZA",
 ];
 shuffle($greetings);
-
-
 ?>
 
 <?php
@@ -61,8 +56,6 @@ if (isset($_POST["btn-onion"])) {
 // }
 
 ?>
-
-<!-- Start HTML -->
 
 <main>
 

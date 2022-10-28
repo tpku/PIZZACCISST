@@ -1,6 +1,6 @@
 </body>
 <footer>
-    <p>PIZZACCISST by T P K U &trade </p>
+    <p>PIZZACCISST by TPKU &#8482;</p>
 </footer>
 
 </html>
