@@ -1,27 +1,9 @@
 <?php
 include "head.php";
 include "arrays.php";
+include "functions.php";
 if (!isset($_SESSION)) {
     session_start();
-}
-
-// $outputName = $_SESSION["name"];
-// $outputName = strtoupper($outputName);
-
-// $greetings = [
-//     "OUI $outputName, YOU PIZZACCISST!",
-//     "HEY THERE! $outputName SEXY BAKER!",
-//     "PARMIGIANO-REGGIANO, BURRATA! CIAO BELLA $outputName!",
-//     "FRUTI DI MARE, MAMA MIA, FORNAIO $outputName!",
-//     "WHEN THE MOON HITS $outputName'S EYE LIKE A BIG PIZZA PIE!",
-// ];
-// shuffle($greetings);
-
-function echoGreeting(): string
-{
-    require "arrays.php";
-    shuffle($greetings);
-    return $greetings[0];
 }
 ?>
 
@@ -97,13 +79,11 @@ echo "</pre>";
         <div class="spinner">
             <h1>
                 <?= echoGreeting() ?>
-                <!-- Greeting index 0 printed -->
             </h1>
         </div>
         <div class="spinner">
             <h1>
                 <?= echoGreeting() ?>
-                <!-- Greeting index 1 printed -->
             </h1>
         </div>
     </div>

@@ -9,7 +9,7 @@ $pizzaToppings = [
     ["btnName" => "tomato-sauce", "name" => "Tomato Sauce"],
     ["btnName" => "blanco", "name" => "Blanco"],
     ["btnName" => "onion", "name" => "Onion"],
-    // // Comment back when function is ready
+    // // ---- Uncomment when buttons/functions are ready ----
     // ["btnName" => "fungi", "name" => "Fungi"],
     // ["btnName" => "kebab", "name" => "Kebab"],
     // ["btnName" => "ham", "name" => "Ham"],
@@ -33,9 +33,7 @@ $pizzaFill = [
 ];
 
 $outputName = $_SESSION["name"];
-
 $outputName = strtoupper($outputName);
-
 $greetings = [
     "OUI $outputName, YOU PIZZACCISST!",
     "HEY THERE! $outputName SEXY BAKER!",
@@ -43,7 +41,7 @@ $greetings = [
     "FRUTI DI MARE, MAMA MIA, FORNAIO $outputName!",
     "WHEN THE MOON HITS $outputName'S EYE LIKE A BIG PIZZA PIE!",
 ];
-shuffle($greetings);
+// shuffle($greetings); // Not needed with function "echoGreeting"
 
 // echo "<pre>";
 // print_r($greetings);
