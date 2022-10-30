@@ -5,19 +5,35 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-$inputName = $_SESSION["name"];
-$inputName = strtoupper($inputName);
+// $outputName = $_SESSION["name"];
+// $outputName = strtoupper($outputName);
 
-$greetings = [
-    "OUI $inputName, YOU PIZZACCISST!",
-    "HEY THERE! $inputName SEXY BAKER!",
-    "PARMIGIANO-REGGIANO, BURRATA! CIAO BELLA $inputName",
-    "MAMA MIA, FORNAIO $inputName FUNGI PIZZA",
-];
-shuffle($greetings);
+// $greetings = [
+//     "OUI $outputName, YOU PIZZACCISST!",
+//     "HEY THERE! $outputName SEXY BAKER!",
+//     "PARMIGIANO-REGGIANO, BURRATA! CIAO BELLA $outputName!",
+//     "FRUTI DI MARE, MAMA MIA, FORNAIO $outputName!",
+//     "WHEN THE MOON HITS $outputName'S EYE LIKE A BIG PIZZA PIE!",
+// ];
+// shuffle($greetings);
+
+function echoGreeting(): string
+{
+    require "arrays.php";
+    shuffle($greetings);
+    return $greetings[0];
+}
 ?>
 
+
 <?php
+// function getBtnData(array $pizzaToppings, array );){
+
+// }
+
+// if (isset($_POST[""])) {
+// } // försöker göra en foreach isset knapp funktion
+
 if (isset($_POST["btn-tomato-sauce"])) {
     $_SESSION["pizza"]["base"] = "tomato-sauce";
 }
@@ -27,6 +43,10 @@ if (isset($_POST["btn-blanco"])) {
 if (isset($_POST["btn-onion"])) {
     $_SESSION["pizza"]["topping"][] = "onion";
 }
+
+echo "<pre>";
+print_r($_SESSION);
+echo "</pre>";
 // Comments below are the rest of the buttons.
 
 // if (isset($_POST["btn-fungi"])) {
@@ -61,17 +81,28 @@ if (isset($_POST["btn-onion"])) {
 ?>
 
 <main>
+    <div class="button-container">
+        <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+            <ul>
+                <?php foreach ($pizzaToppings as $topping) : ?>
+                    <li>
+                        <input type="submit" name="btn-<?= $topping["btnName"]; ?>" value="<?= $topping["name"]; ?>">
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </form>
+    </div>
 
     <div class="spin-container">
         <div class="spinner">
             <h1>
-                <?= $greetings[0] ?>
+                <?= echoGreeting() ?>
                 <!-- Greeting index 0 printed -->
             </h1>
         </div>
         <div class="spinner">
             <h1>
-                <?= $greetings[1] ?>
+                <?= echoGreeting() ?>
                 <!-- Greeting index 1 printed -->
             </h1>
         </div>

@@ -1,0 +1,3 @@
+<?php foreach ($pizzaToppings as $topping) : ?>
+    <li><input type="submit" name="btn-<?= $topping["name"]; ?>" value="<?= $topping["value"]; ?>"></li>
+<?php endforeach ?>
