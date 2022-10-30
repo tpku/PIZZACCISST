@@ -7,17 +7,8 @@ if (!isset($_SESSION)) {
 }
 
 if (isset($_POST["name"])) {
-    // check if input field got data
     $_SESSION["name"] = htmlspecialchars($_POST["name"]);
     $_SESSION["name"] = strtoupper($_SESSION["name"]);
-    // $inputName = $_SESSION["name"];
-    // if (empty($_SESSION["name"])) {
-    //     // print if field is empty
-    //     echo "HEY, WHO?";
-    // } else {
-    //     // else print variable
-    //     // echo $_SESSION["name"];
-    // }
 }
 
 
@@ -43,7 +34,7 @@ if (isset($_POST["name"])) {
         <?php endif; ?>
         <?php if (!empty($_POST["name"])) : ?>
             <p>
-                <!-- Print is input field got data -->
+                <!-- Print if input field got data -->
                 <?= welcomeMessage($_SESSION["name"]); ?>
             </p>
         <?php endif; ?>

@@ -1,6 +1,9 @@
 <?php
 include "head.php";
 include "arrays.php";
+if (!isset($_SESSION)) {
+    session_start();
+}
 
 $inputName = $_SESSION["name"];
 $inputName = strtoupper($inputName);
