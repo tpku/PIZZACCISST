@@ -9,9 +9,6 @@ if (!isset($_SESSION)) {
 
 
 <?php
-// function getBtnData(array $pizzaToppings, array );){
-
-// }
 
 // if (isset($_POST[""])) {
 // } // försöker göra en foreach isset knapp funktion

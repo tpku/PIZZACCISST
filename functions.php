@@ -22,3 +22,41 @@ function echoGreeting(): string
     shuffle($greetings);
     return $greetings[0];
 }
+
+
+// // ---- useless shit ---
+// function getBtnData(string $input): array
+// {
+//     require "arrays.php";
+
+//     $toppingBtns = [];
+
+//     foreach ($pizzaToppings as $topping["btnName"] => $input) {
+//         if ($topping["btnName"] = $input) {
+//             $toppingBtns[] = $topping["btnName"];
+//         }
+//     }
+//     // foreach ($pizzaToppings as $btnName["name"] => $input) {
+//     //     if ($input === $btnName["name"]) {
+//     //         $toppingBtns[] = $btnName;
+//     //     }
+//     // }
+
+//     return $toppingBtns;
+// }
+
+// echo "<pre>";
+// var_dump(getBtnData("onion"));
+// echo "</pre>";
+
+// function echoArray($name)
+// {
+//     require "arrays.php";
+//     foreach ($pizzaToppings as $topping) {
+//         if ($name == $topping["btnName"]) {
+//             echo "hej";
+//         }
+//     }
+// }
+
+// echo getBtnData();
