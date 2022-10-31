@@ -75,12 +75,12 @@ echo "</pre>";
     <div class="spin-container">
         <div class="spinner">
             <h1>
-                <?= echoGreeting() ?>
+                <?= $_SESSION["quote"] ?>
             </h1>
         </div>
         <div class="spinner">
             <h1>
-                <?= echoGreeting() ?>
+                <?= $_SESSION["quote"] ?>
             </h1>
         </div>
     </div>

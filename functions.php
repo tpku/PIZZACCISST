@@ -5,58 +5,25 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-
-function welcomeMessage(
-    string $name,
-    string $greeting = "CIAO BELLA, ",
-    string $ending = " TIME TO MOVE ON!, "
-) {
+function welcomeMessage(string $name)
+{
     require "arrays.php";
-    echo "$greeting $name. $ending";
+    echo "CIAO BELLA, $name. TIME TO MOVE ON!";
 }
 
 
 function echoGreeting(): string
 {
-    require "arrays.php";
+    $name = $_SESSION["name"];
+    $name = strtoupper($name);
+    $greetings = [
+        "OUI $name, YOU PIZZACCISST!",
+        "HEY THERE! $name SEXY BAKER!",
+        "PARMIGIANO-REGGIANO, BURRATA! CIAO BELLA $name!",
+        "FRUTI DI MARE, MAMA MIA, FORNAIO $name!",
+        "WHEN THE MOON HITS $name'S EYE LIKE A BIG PIZZA PIE!",
+    ];
     shuffle($greetings);
-    return $greetings[0];
+    $_SESSION["quote"] = $greetings[0];
+    return $_SESSION["quote"];
 }
-
-
-// // ---- useless shit ---
-// function getBtnData(string $input): array
-// {
-//     require "arrays.php";
-
-//     $toppingBtns = [];
-
-//     foreach ($pizzaToppings as $topping["btnName"] => $input) {
-//         if ($topping["btnName"] = $input) {
-//             $toppingBtns[] = $topping["btnName"];
-//         }
-//     }
-//     // foreach ($pizzaToppings as $btnName["name"] => $input) {
-//     //     if ($input === $btnName["name"]) {
-//     //         $toppingBtns[] = $btnName;
-//     //     }
-//     // }
-
-//     return $toppingBtns;
-// }
-
-// echo "<pre>";
-// var_dump(getBtnData("onion"));
-// echo "</pre>";
-
-// function echoArray($name)
-// {
-//     require "arrays.php";
-//     foreach ($pizzaToppings as $topping) {
-//         if ($name == $topping["btnName"]) {
-//             echo "hej";
-//         }
-//     }
-// }
-
-// echo getBtnData();

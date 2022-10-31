@@ -32,16 +32,15 @@ $pizzaFill = [
     "topping" => "sauce",
 ];
 
-$outputName = $_SESSION["name"];
-$outputName = strtoupper($outputName);
-$greetings = [
-    "OUI $outputName, YOU PIZZACCISST!",
-    "HEY THERE! $outputName SEXY BAKER!",
-    "PARMIGIANO-REGGIANO, BURRATA! CIAO BELLA $outputName!",
-    "FRUTI DI MARE, MAMA MIA, FORNAIO $outputName!",
-    "WHEN THE MOON HITS $outputName'S EYE LIKE A BIG PIZZA PIE!",
-];
-// shuffle($greetings); // Not needed with function "echoGreeting"
+// $outputName = $_SESSION["name"];
+// $outputName = strtoupper($outputName);
+// $greetings = [
+//     "OUI $outputName, YOU PIZZACCISST!",
+//     "HEY THERE! $outputName SEXY BAKER!",
+//     "PARMIGIANO-REGGIANO, BURRATA! CIAO BELLA $outputName!",
+//     "FRUTI DI MARE, MAMA MIA, FORNAIO $outputName!",
+//     "WHEN THE MOON HITS $outputName'S EYE LIKE A BIG PIZZA PIE!",
+// ];
 
 // echo "<pre>";
 // print_r($greetings);
