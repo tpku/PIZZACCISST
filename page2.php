@@ -75,12 +75,12 @@ echo "</pre>";
     <div class="spin-container">
         <div class="spinner">
             <h1>
-                <?= $_SESSION["quote"] ?>
+                <?= $_SESSION["quoteOne"] ?>
             </h1>
         </div>
         <div class="spinner">
             <h1>
-                <?= $_SESSION["quote"] ?>
+                <?= $_SESSION["quoteTwo"] ?>
             </h1>
         </div>
     </div>

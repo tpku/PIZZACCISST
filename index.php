@@ -34,7 +34,10 @@ if (isset($_POST["name"])) {
             <p>
                 <!-- Print if input field got data -->
                 <?= welcomeMessage($inputName); ?>
-                <?php $_SESSION["quote"] = echoGreeting($inputName); ?>
+                <?php
+                $_SESSION["quoteOne"] = echoGreetingOne($inputName);
+                $_SESSION["quoteTwo"] = echoGreetingTwo($inputName);
+                ?>
 
             </p>
         <?php endif; ?>

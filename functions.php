@@ -12,7 +12,7 @@ function welcomeMessage(string $name)
 }
 
 
-function echoGreeting(): string
+function echoGreetingOne(): string
 {
     $name = $_SESSION["name"];
     $name = strtoupper($name);
@@ -24,6 +24,19 @@ function echoGreeting(): string
         "WHEN THE MOON HITS $name'S EYE LIKE A BIG PIZZA PIE!",
     ];
     shuffle($greetings);
-    $_SESSION["quote"] = $greetings[0];
-    return $_SESSION["quote"];
+    return $greetings[0];
+}
+function echoGreetingTwo(): string
+{
+    $name = $_SESSION["name"];
+    $name = strtoupper($name);
+    $greetings = [
+        "OUI $name, YOU PIZZACCISST!",
+        "HEY THERE! $name SEXY BAKER!",
+        "PARMIGIANO-REGGIANO, BURRATA! CIAO BELLA $name!",
+        "FRUTI DI MARE, MAMA MIA, FORNAIO $name!",
+        "WHEN THE MOON HITS $name'S EYE LIKE A BIG PIZZA PIE!",
+    ];
+    shuffle($greetings);
+    return $greetings[1];
 }
