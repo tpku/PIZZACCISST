@@ -6,10 +6,12 @@ if (!isset($_SESSION)) {
 session_destroy();
 ?>
 <main>
-    <p>BYE BYE, ALL PIZZAS HAVE TO GO!</p>
-    <form action="index.php" method="post">
-        <input type="submit" name="submit" value="COME AGAIN!">
-    </form>
+    <div class="form-container">
+        <p class="form-section">BYE BYE, ALL PIZZAS HAVE TO GO!</p>
+        <form action="index.php" method="post">
+            <input class="form-section" type="submit" name="submit" value="COME AGAIN!">
+        </form>
+    </div>
 </main>
 
 <?php include "footer.php"; ?>
