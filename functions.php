@@ -22,6 +22,7 @@ function echoGreetingOne(): string
         "PARMIGIANO-REGGIANO, BURRATA! CIAO BELLA $name!",
         "FRUTI DI MARE, MAMA MIA, FORNAIO $name!",
         "WHEN THE MOON HITS $name'S EYE LIKE A BIG PIZZA PIE!",
+        "VAFFANCULO HIT THOSE CARBS! LET'S BAKE MAESTRO $name",
     ];
     shuffle($greetings);
     return $greetings[0];
@@ -36,6 +37,7 @@ function echoGreetingTwo(): string
         "PARMIGIANO-REGGIANO, BURRATA! CIAO BELLA $name!",
         "FRUTI DI MARE, MAMA MIA, FORNAIO $name!",
         "WHEN THE MOON HITS $name'S EYE LIKE A BIG PIZZA PIE!",
+        "VAFFANCULO HIT THOSE CARBS! LET'S BAKE MAESTRO $name",
     ];
     shuffle($greetings);
     return $greetings[1];

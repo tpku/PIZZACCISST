@@ -58,6 +58,7 @@ echo "</pre>";
 ?>
 
 <main>
+    <p>TIME TO ADD 'EM TOPPINGS!</p>
     <div class="button-container">
         <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
             <ul>
