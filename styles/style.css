@@ -46,13 +46,39 @@ footer {
 /* ---- Form and input styling ---- */
 
 .form-container {
-    background-color: rgba(255, 21, 0, 0.622);
     width: 400px;
     display: flex;
     flex-direction: column;
 }
 
 .form-section {
+    background-color: rgba(255, 21, 0, 0.622);
+    padding: 0;
     height: 100px;
     width: 100%;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding: 0;
+    border
+}
+
+input::placeholder{
+    color: var(--orange-text);
+}
+
+input:placeholder-shown:hover{
+    background-color: var(--black-bg-opacity);
+    transition: 2s ease;
+    /* animation: background-gradient 10s linear infinite; */
+}
+
+button:hover, input:hover {
+    cursor: pointer;
+    background-color: var(--black-bg-opacity);
+    transition: 2s ease;
 }

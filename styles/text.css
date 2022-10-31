@@ -1,6 +1,10 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
     color: var(--orange-text);
+}
+
+body, input, button {
+    font-size: 1rem;
+    font-family: "Helvetica", Arial;
 }
 
 a {
@@ -13,7 +17,6 @@ ul {
 
 p, input {
     margin: 0;
-    color: var(--orange-text);
     font-family: Arial, Helvetica, sans-serif;
 }
 
