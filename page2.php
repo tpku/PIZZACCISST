@@ -2,6 +2,7 @@
 include "head.php";
 include "arrays.php";
 include "functions.php";
+include "buttons.php";
 if (!isset($_SESSION)) {
     session_start();
 }
@@ -10,28 +11,25 @@ if (!isset($_SESSION)) {
 
 <?php
 
-// if (isset($_POST[""])) {
-// } // försöker göra en foreach isset knapp funktion
-
-if (isset($_POST["btn-tomato-sauce"])) {
-    $_SESSION["pizza"]["base"] = "tomato-sauce";
-}
-if (isset($_POST["btn-blanco"])) {
-    $_SESSION["pizza"]["base"] = "blanco";
-}
-if (isset($_POST["btn-onion"])) {
-    $_SESSION["pizza"]["topping"][] = "onion";
-}
+// if (isset($_POST["btn-tomato-sauce"])) {
+//     $_SESSION["pizza"]["base"] = "tomato-sauce";
+// }
+// if (isset($_POST["btn-blanco"])) {
+//     $_SESSION["pizza"]["base"] = "blanco";
+// }
+// if (isset($_POST["btn-onion"])) {
+//     $_SESSION["pizza"]["topping"][] = "onion";
+// }
+// if (isset($_POST["btn-fungi"])) {
+//     $_SESSION["pizza"]["topping"][] = "fungi";
+// }
 
 echo "<pre>";
 print_r($_SESSION);
 echo "</pre>";
 // Comments below are the rest of the buttons.
 
-// if (isset($_POST["btn-fungi"])) {
-//     $pizzaDone = pizzaAdder($pizzaFill, "fungi");
-//     $_SESSION["pizza"] = $pizzaDone;
-// }
+
 // if (isset($_POST["btn-kebab"])) {
 //     $pizzaDone = pizzaAdder($pizzaFill, "kebab");
 //     $_SESSION["pizza"] = $pizzaDone;

@@ -9,8 +9,8 @@ $pizzaToppings = [
     ["btnName" => "tomato-sauce", "name" => "Tomato Sauce"],
     ["btnName" => "blanco", "name" => "Blanco"],
     ["btnName" => "onion", "name" => "Onion"],
+    ["btnName" => "fungi", "name" => "Fungi"],
     // // ---- Uncomment when buttons/functions are ready ----
-    // ["btnName" => "fungi", "name" => "Fungi"],
     // ["btnName" => "kebab", "name" => "Kebab"],
     // ["btnName" => "ham", "name" => "Ham"],
     // ["btnName" => "pineapple", "name" => "Pineapple"],
