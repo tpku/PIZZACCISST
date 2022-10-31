@@ -58,7 +58,25 @@ echo "</pre>";
 ?>
 
 <main>
-    <p>WHAT'S YOUR TASTE?</p>
+    <div class="pizza-container">
+        <div class="pizza">
+            <?php foreach ($_SESSION["pizza"] as $base) : ?>
+                <?php if ($_SESSION["pizza"]["base"] === "tomato-sauce") : ?>
+                    <div class="tomato-sauce">
+                        <?php foreach ($_SESSION["pizza"]["topping"] as $topping) : ?>
+                            <?php if ($topping === "onion") : ?>
+                                <div class='onion'></div>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
+                <?php if ($_SESSION["pizza"]["base"] === "blanco") : ?>
+                    <div class="blanco"></div>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </div>
+    </div>
+
     <div class="button-container">
         <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
             <ul>
@@ -69,6 +87,7 @@ echo "</pre>";
                 <?php endforeach; ?>
             </ul>
         </form>
+        <p>WHAT'S YOUR TASTE?</p>
     </div>
 
     <div class="spin-container">

@@ -86,7 +86,7 @@ input:placeholder-shown:hover {
 
 button:hover, input:hover {
     background-color: var(--black-bg-opacity);
-    transition: 2s ease;
+    transition: 3s ease;
 }
 
 .input-btn {
@@ -95,7 +95,66 @@ button:hover, input:hover {
 
 /* ---- Page 2 Styling ---- */
 
+/* ---- Pizza ---- */
+.pizza-container {
+    position: absolute;
+    top: 0;
+    height: 70%;
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza {
+    background-color: var(--pizza-);
+    width: 400px;
+    height: 380px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: pizza-animation 5s linear forwards infinite;
+}
+
+.tomato-sauce{
+    background-color: var(--pizza-base-red);
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blanco{
+    background-color: var(--pizza-base-white);
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.onion {
+    background-color: burlywood;
+    width: 10%;
+    height: 10%;
+    border-radius: 100%;
+}
+
+
+/* ---- Buttons Container ---- */
 .button-container {
+    z-index: 999;
+    position: fixed;
+    max-width: 700px;
+    bottom: 100px;
     width: 100%;
 }
 
@@ -110,11 +169,18 @@ button:hover, input:hover {
 
 .topping-btn {
     background-color: rgba(255, 21, 0, 0.622);
-    text-align: center;
     border-style: none;
     height: 40px;
     width: 110px;
     padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.topping-btn:hover {
+    cursor: pointer;
+    background-color: orangered;
+    animation: topping-buttons 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) reverse infinite;
 }
 
 
@@ -140,30 +206,4 @@ button:hover, input:hover {
 }
 .spinner:last-of-type h1 {
     animation: spinner-text 4.5s linear reverse infinite;
-}
-/* Text Spinner Gradient */
-@keyframes spinner-text {
-    0% {
-        scale: 1;
-        transform: rotate3d(1,1,1, -360deg);
-        color: #00aaff5f;
-    }
-
-    25% {
-        color: #d900c067;
-    }
-
-    50% {
-        scale: 0.1;
-    }
-
-    75% {
-        /* transform: rotatex(360deg); */
-        color: #26008071;
-    }
-
-    100% {
-        scale: 1;
-        color: rgba(255, 255, 255, 0.322);
-    }
 }
