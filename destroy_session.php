@@ -9,7 +9,7 @@ session_destroy();
     <div class="form-container">
         <p class="form-section">BYE BYE, ALL PIZZAS HAVE TO GO!</p>
         <form action="index.php" method="post">
-            <input class="form-section" type="submit" name="submit" value="COME AGAIN!">
+            <input class="form-section input-btn" type="submit" name="submit" value="COME AGAIN!">
         </form>
     </div>
 </main>

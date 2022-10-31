@@ -2,8 +2,27 @@
     --white-bg: #efefef;
     --black-bg: #0a0015;
     --black-bg-opacity: #0a001580;
-    --orange-bg: #ff4d00;
+    --orange-bg: #ff15009f;
+    ;
 
     --orange-text: rgb(255, 106, 0);
 }
 
+/* Input cards animation */
+@keyframes background-gradient {
+    0% {
+        background-color: var(--orange-fill);
+    }
+    25% {
+        background-color: #ff005dad;
+    }
+    50% {
+        background-color: var(--bg-purple);
+    }
+    75% {
+        background-color: #001affba;
+    }
+    100% {
+        background-color: var(--orange-fill);
+    }
+}

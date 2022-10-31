@@ -11,9 +11,8 @@ main, header {
     padding: 0 20px 0 20px;
 }
 
-body {
-    /* background-image: url(img/background.jpeg); */
-    background-image: url(/Documents/GitHub/PIZZACCISST/images/background.jpeg);
+body { 
+    background-image: url("../images/background.jpeg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -33,6 +32,11 @@ header ul{
 main {
     padding-top: 20px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 footer {
@@ -60,25 +64,106 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+.form-section:hover {
+    animation: background-gradient 10s linear infinite;
 }
 
 input {
     padding: 0;
-    border
 }
 
 input::placeholder{
     color: var(--orange-text);
 }
 
-input:placeholder-shown:hover{
+
+input:placeholder-shown:hover {
+    border: 30px var(--orange-bg) solid;
     background-color: var(--black-bg-opacity);
-    transition: 2s ease;
-    /* animation: background-gradient 10s linear infinite; */
 }
 
 button:hover, input:hover {
-    cursor: pointer;
     background-color: var(--black-bg-opacity);
     transition: 2s ease;
+}
+
+.input-btn {
+    cursor: pointer;
+}
+
+/* ---- Page 2 Styling ---- */
+
+.button-container {
+    width: 100%;
+}
+
+.button-container ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.topping-btn {
+    background-color: rgba(255, 21, 0, 0.622);
+    text-align: center;
+    border-style: none;
+    height: 40px;
+    width: 110px;
+    padding: 5px;
+}
+
+
+/* ---- H1 Quote Spinners ---- */
+.spin-container {
+    width: 100%;
+    padding: 0 20px 0 20px;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spinner {
+    width: 400px;
+}
+
+.spinner h1 {
+    animation: spinner-text 5s linear infinite backwards;
+
+}
+.spinner:last-of-type h1 {
+    animation: spinner-text 4.5s linear reverse infinite;
+}
+/* Text Spinner Gradient */
+@keyframes spinner-text {
+    0% {
+        scale: 1;
+        transform: rotate3d(1,1,1, -360deg);
+        color: #00aaff5f;
+    }
+
+    25% {
+        color: #d900c067;
+    }
+
+    50% {
+        scale: 0.1;
+    }
+
+    75% {
+        /* transform: rotatex(360deg); */
+        color: #26008071;
+    }
+
+    100% {
+        scale: 1;
+        color: rgba(255, 255, 255, 0.322);
+    }
 }

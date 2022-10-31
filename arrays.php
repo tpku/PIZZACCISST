@@ -10,13 +10,13 @@ $pizzaToppings = [
     ["btnName" => "blanco", "name" => "Blanco"],
     ["btnName" => "onion", "name" => "Onion"],
     ["btnName" => "fungi", "name" => "Fungi"],
-    // // ---- Uncomment when buttons/functions are ready ----
-    // ["btnName" => "kebab", "name" => "Kebab"],
-    // ["btnName" => "ham", "name" => "Ham"],
-    // ["btnName" => "pineapple", "name" => "Pineapple"],
-    // ["btnName" => "banana", "name" => "Banana"],
-    // ["btnName" => "shrimp", "name" => "Shrimp"],
-    // ["btnName" => "sauce", "name" => "Sauce"],
+    // ---- Uncomment when buttons/functions are ready ----
+    ["btnName" => "kebab", "name" => "Kebab"],
+    ["btnName" => "ham", "name" => "Ham"],
+    ["btnName" => "pineapple", "name" => "Pineapple"],
+    ["btnName" => "banana", "name" => "Banana"],
+    ["btnName" => "shrimp", "name" => "Shrimp"],
+    ["btnName" => "sauce", "name" => "Sauce"],
 ];
 
 $pizzaFill = [

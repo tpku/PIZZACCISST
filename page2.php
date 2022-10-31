@@ -58,13 +58,13 @@ echo "</pre>";
 ?>
 
 <main>
-    <p>TIME TO ADD 'EM TOPPINGS!</p>
+    <p>WHAT'S YOUR TASTE?</p>
     <div class="button-container">
         <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
             <ul>
                 <?php foreach ($pizzaToppings as $topping) : ?>
                     <li>
-                        <input type="submit" name="btn-<?= $topping["btnName"]; ?>" value="<?= $topping["name"]; ?>">
+                        <input class="topping-btn" type="submit" name="btn-<?= $topping["btnName"]; ?>" value="<?= $topping["name"]; ?>">
                     </li>
                 <?php endforeach; ?>
             </ul>
