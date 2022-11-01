@@ -10,51 +10,9 @@ if (!isset($_SESSION)) {
 
 
 <?php
-
-// if (isset($_POST["btn-tomato-sauce"])) {
-//     $_SESSION["pizza"]["base"] = "tomato-sauce";
-// }
-// if (isset($_POST["btn-blanco"])) {
-//     $_SESSION["pizza"]["base"] = "blanco";
-// }
-// if (isset($_POST["btn-onion"])) {
-//     $_SESSION["pizza"]["topping"][] = "onion";
-// }
-// if (isset($_POST["btn-fungi"])) {
-//     $_SESSION["pizza"]["topping"][] = "fungi";
-// }
-
-echo "<pre>";
-print_r($_SESSION);
-echo "</pre>";
-// Comments below are the rest of the buttons.
-
-
-// if (isset($_POST["btn-kebab"])) {
-//     $pizzaDone = pizzaAdder($pizzaFill, "kebab");
-//     $_SESSION["pizza"] = $pizzaDone;
-// }
-// if (isset($_POST["btn-ham"])) {
-//     $pizzaDone = pizzaAdder($pizzaFill, "ham");
-//     $_SESSION["pizza"] = $pizzaDone;
-// }
-// if (isset($_POST["btn-pineapple"])) {
-//     $pizzaDone = pizzaAdder($pizzaFill, "pineapple");
-//     $_SESSION["pizza"] = $pizzaDone;
-// }
-// if (isset($_POST["btn-banana"])) {
-//     $pizzaDone = pizzaAdder($pizzaFill, "banana");
-//     $_SESSION["pizza"] = $pizzaDone;
-// }
-// if (isset($_POST["btn-shrimp"])) {
-//     $pizzaDone = pizzaAdder($pizzaFill, "shrimp");
-//     $_SESSION["pizza"] = $pizzaDone;
-// }
-// if (isset($_POST["btn-sauce"])) {
-//     $pizzaDone = pizzaAdder($pizzaFill, "sauce");
-//     $_SESSION["pizza"] = $pizzaDone;
-// }
-
+// echo "<pre>";
+// print_r($_SESSION);
+// echo "</pre>";
 ?>
 
 <main>
@@ -78,6 +36,7 @@ echo "</pre>";
     </div>
 
     <div class="button-container">
+        <p>WHAT'S YOUR TASTE?</p>
         <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
             <ul>
                 <?php foreach ($pizzaToppings as $topping) : ?>
@@ -87,7 +46,6 @@ echo "</pre>";
                 <?php endforeach; ?>
             </ul>
         </form>
-        <p>WHAT'S YOUR TASTE?</p>
     </div>
 
     <div class="spin-container">

@@ -1,105 +1,105 @@
 :root {
-    --white-bg: #efefef;
-    --black-bg: #0a0015;
-    --black-bg-opacity: #0a001580;
-    --orange-bg: #ff15009f;
+  --white-bg: #efefef;
+  --black-bg: #0a0015;
+  --black-bg-opacity: #0a001580;
+  --orange-bg: #ff15009f;
 
-    --orange-text: rgb(255, 106, 0);
+  --orange-text: rgb(255, 106, 0);
 
-    /* ---- Pizza ---- */
-    --pizza-: rgb(241, 195, 139);
-    --pizza-base-red: rgb(255, 0, 0);
-    --pizza-base-white: rgb(255, 242, 226);
+  /* ---- Pizza ---- */
+  --pizza-: rgb(241, 195, 139);
+  --pizza-base-red: #ff0000de;
+  --pizza-base-white: #fff2e2cc;
 }
 
 /* Input cards animation */
 @keyframes background-gradient {
-    0% {
-        background-color: var(--orange-fill);
-    }
-    25% {
-        background-color: #ff005dad;
-    }
-    50% {
-        background-color: var(--bg-purple);
-    }
-    75% {
-        background-color: #001affba;
-    }
-    100% {
-        background-color: var(--orange-fill);
-    }
+  0% {
+    background-color: var(--orange-fill);
+  }
+  25% {
+    background-color: #ff005dad;
+  }
+  50% {
+    background-color: var(--bg-purple);
+  }
+  75% {
+    background-color: #001affba;
+  }
+  100% {
+    background-color: var(--orange-fill);
+  }
 }
 
 /* Text Spinner Gradient */
 @keyframes spinner-text {
-    0% {
-        scale: 1;
-        transform: rotate3d(1,1,1, -360deg);
-        color: #00aaff5f;
-    }
+  0% {
+    scale: 1;
+    transform: rotate3d(1, 1, 1, -360deg);
+    color: #00aaff5f;
+  }
 
-    25% {
-        color: #d900c067;
-    }
+  25% {
+    color: #d900c067;
+  }
 
-    50% {
-        scale: 0.1;
-    }
+  50% {
+    scale: 0.1;
+  }
 
-    75% {
-        /* transform: rotatex(360deg); */
-        color: #26008071;
-    }
+  75% {
+    /* transform: rotatex(360deg); */
+    color: #26008071;
+  }
 
-    100% {
-        scale: 1;
-        color: #00aaff5f;
-    }
+  100% {
+    scale: 1;
+    color: #00aaff5f;
+  }
 }
 
 /* ---- Topping Button Animation ---- */
 @keyframes topping-buttons {
-    0% {
-        scale: 1;
-    }
+  0% {
+    scale: 1;
+  }
 
-    25% {
-        background-color: #ff4500;
-    }
+  25% {
+    background-color: #ff4500;
+  }
 
-    50% {
-        scale: 0.9;
-        opacity: 50%;
-    }
+  50% {
+    scale: 0.9;
+    opacity: 50%;
+  }
 
-    75% {
-        color: #ff4500;
-    }
+  75% {
+    color: #ff4500;
+  }
 
-    100% {
-        scale: 1.1;
-    }
+  100% {
+    scale: 1.1;
+  }
 }
 
 /* ---- Pizza Animation ---- */
 @keyframes pizza-animation {
-    0% {
-    }
+  0% {
+  }
 
-    25% {
-    }
+  25% {
+  }
 
-    50% {
-        transform: rotate3d(0.2,0.5,0.8, 360deg);
-        /* transform: rotatey(360deg); */
-        opacity: 60%;
-    }
+  50% {
+    transform: rotate3d(0.2, 0.5, 0.8, 360deg);
+    /* transform: rotatey(360deg); */
+    opacity: 60%;
+  }
 
-    75% {
-    }
+  75% {
+  }
 
-    100% {
-        opacity: 90%;
-    }
+  100% {
+    opacity: 90%;
+  }
 }
