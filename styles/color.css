@@ -31,7 +31,7 @@
   }
 }
 
-/* Text Spinner Gradient */
+/* ---- Text Spinner Gradient & Transform ---- */
 @keyframes spinner-text {
   0% {
     scale: 1;
@@ -85,21 +85,16 @@
 /* ---- Pizza Animation ---- */
 @keyframes pizza-animation {
   0% {
-  }
-
-  25% {
+    transform: rotate3d(0.2, 0, 0.8, 0deg);
+    opacity: 90%;
   }
 
   50% {
-    transform: rotate3d(0.2, 0.5, 0.8, 360deg);
-    /* transform: rotatey(360deg); */
-    opacity: 60%;
-  }
-
-  75% {
+    opacity: 70%;
   }
 
   100% {
     opacity: 90%;
+    transform: rotate3d(0, 0.2, 1, 360deg);
   }
 }

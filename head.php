@@ -23,8 +23,9 @@ if (!isset($_SESSION)) {
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="index.php">START</a></li>
-                <!-- <li><a href="page2.php">PAGE 2</a></li> Only visible when developing -->
+                <!-- <li><a href="index.php">START</a></li>
+                <li><a href="page2.php">PAGE 2</a></li>  -->
+                <!-- Only visible when developing -->
                 <li><a href="destroy_session.php">DESTROY</a></li>
             </ul>
         </nav>

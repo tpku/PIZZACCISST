@@ -10,7 +10,6 @@ $pizzaToppings = [
     ["btnName" => "blanco", "name" => "Blanco"],
     ["btnName" => "onion", "name" => "Onion"],
     ["btnName" => "fungi", "name" => "Fungi"],
-    // ---- Uncomment when buttons/functions are ready ----
     ["btnName" => "kebab", "name" => "Kebab"],
     ["btnName" => "ham", "name" => "Ham"],
     ["btnName" => "pineapple", "name" => "Pineapple"],
@@ -31,17 +30,3 @@ $pizzaFill = [
     "topping" => "shrimp",
     "topping" => "sauce",
 ];
-
-// $outputName = $_SESSION["name"];
-// $outputName = strtoupper($outputName);
-// $greetings = [
-//     "OUI $outputName, YOU PIZZACCISST!",
-//     "HEY THERE! $outputName SEXY BAKER!",
-//     "PARMIGIANO-REGGIANO, BURRATA! CIAO BELLA $outputName!",
-//     "FRUTI DI MARE, MAMA MIA, FORNAIO $outputName!",
-//     "WHEN THE MOON HITS $outputName'S EYE LIKE A BIG PIZZA PIE!",
-// ];
-
-// echo "<pre>";
-// print_r($greetings);
-// echo "<pre>";

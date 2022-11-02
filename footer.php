@@ -1,5 +1,5 @@
 <footer>
-    <p>PIZZACCISST by TPKU &trade;</p>
+    <p class="footer-p">PIZZACCISST by TPKU &trade;</p>
 </footer>
 </body>
 
