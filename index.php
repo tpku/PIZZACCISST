@@ -22,27 +22,36 @@ if (isset($_POST["name"])) {
             <input class="form-section input-btn" type="submit" name="submit" value="SHOW ME!">
         </form>
         <!-- <div> -->
-        <?php if (empty($_POST["name"])) : ?>
-            <p class="form-section">
-                <!-- Print if input field is empty -->
-                <?= "HEY, WHO?"; ?>
-            </p>
-        <?php endif; ?>
-        <?php if (!empty($_POST["name"])) : ?>
-            <p class="form-section">
-                <!-- Print if input field got data -->
-                <?= welcomeMessage($inputName); ?>
-                <!-- Execute if input field got data -->
-                <?php
-                $_SESSION["quoteOne"] = echoGreetingOne($inputName);
-                $_SESSION["quoteTwo"] = echoGreetingTwo($inputName);
-                ?>
+        <?php if (isset($_POST["name"])) : ?>
+            <?php if (empty($_POST["name"])) : ?>
+                <p class="form-section">
+                    <!-- Print if input field is empty -->
+                    <?= "MI SCUSI, WHO?"; ?>
+                </p>
+            <?php endif; ?>
+            <?php if (!empty($_POST["name"])) : ?>
+                <p class="form-section">
+                    <!-- Print if input field is empty -->
+                    <?= "MI PIACE LA PIZZA"; ?>
+                </p>
+            <?php endif; ?>
+            <?php if (!empty($_POST["name"])) : ?>
+                <p class="form-section">
+                    <!-- Print if input field got data -->
+                    <?= welcomeMessage($inputName); ?>
+                    <!-- Execute if input field got data -->
+                    <?php
+                    $_SESSION["quoteOne"] = echoGreetingOne($inputName);
+                    $_SESSION["quoteTwo"] = echoGreetingTwo($inputName);
+                    ?>
 
-            </p>
-            <form action="page2.php" method="post">
-                <button class="form-section input-btn" type="submit" name="next">SPIN THAT SH*T!</button>
-            </form>
+                </p>
+                <form action="page2.php" method="post">
+                    <button class="form-section input-btn" type="submit" name="next">LIGHT THAT FIRE!</button>
+                </form>
+            <?php endif; ?>
         <?php endif; ?>
+
         <!-- </div> -->
     </div>
 </main>
