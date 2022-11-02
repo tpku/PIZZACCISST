@@ -33,6 +33,10 @@ button {
   font-size: 2rem;
 }
 
+.button-container p {
+  text-align: center;
+}
+
 .button-container input {
   font-size: 1.2rem;
 }
@@ -41,4 +45,70 @@ button {
   font-size: 1.1rem;
   word-spacing: -6px;
   letter-spacing: -1px;
+}
+
+@media screen and (max-width: 750px) {
+  .button-container input {
+    font-size: 0.9rem;
+  }
+
+  .button-container p {
+    text-align: center;
+  }
+
+  .button-container .btn-tomato-sauce,
+  .button-container .btn-pineapple {
+    font-size: 0.9rem;
+    word-spacing: -2px;
+    letter-spacing: 0px;
+  }
+}
+
+/* Javscript Circular Text */
+
+.section-container section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+section .text {
+  position: absolute;
+  top: 260px;
+  color: var(--orange-text);
+  font-size: 2rem;
+  user-select: none;
+  pointer-events: none;
+  animation: circular-text 12s linear infinite;
+}
+
+section .text span {
+  opacity: 80%;
+  position: absolute;
+  top: -250px;
+  text-transform: uppercase;
+  display: block;
+  transform-origin: 0 250px;
+}
+
+@keyframes circular-text {
+  0% {
+    transform: rotate(0deg);
+    color: #00aaff5f;
+  }
+
+  25% {
+    color: #d900c067;
+  }
+
+  75% {
+    color: #26008071;
+  }
+
+  100% {
+    color: #00aaff5f;
+    transform: rotate(360deg);
+  }
 }

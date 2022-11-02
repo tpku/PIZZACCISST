@@ -14,4 +14,9 @@ session_destroy();
     </div>
 </main>
 
-<?php include "footer.php"; ?>
+<footer>
+    <p class="footer-p">PIZZACCISST by TPKU &trade;</p>
+</footer>
+</body>
+
+</html>
