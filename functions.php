@@ -8,7 +8,7 @@ if (!isset($_SESSION)) {
 function welcomeMessage(string $name)
 {
     require "arrays.php";
-    echo "CIAO BELLA, $name. LIGHT THAT FIRE!";
+    echo "CIAO BELLA, $name.";
 }
 
 
