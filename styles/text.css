@@ -1,25 +1,44 @@
 * {
-    color: var(--orange-text);
+  color: var(--orange-text);
 }
 
-body, input, button {
-    font-size: 1rem;
-    font-family: "Helvetica", Arial;
+body,
+input,
+.footer-p {
+  font-size: 1rem;
+  font-family: monospace;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-p, input, input::placeholder {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+p,
+input,
+input::placeholder,
+button {
+  margin: 0;
+  font-family: monospace;
 }
 
 .form-section {
-    font-size: 2rem;
+  font-size: 2rem;
+}
+
+.button-container {
+  font-size: 2rem;
+}
+
+.button-container input {
+  font-size: 1.2rem;
+}
+.button-container .btn-tomato-sauce,
+.button-container .btn-pineapple {
+  font-size: 1.1rem;
+  word-spacing: -6px;
+  letter-spacing: -1px;
 }
