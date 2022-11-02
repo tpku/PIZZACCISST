@@ -94,5 +94,5 @@ $baker = $_SESSION["name"];
         </div>
     </div>
 </main>
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
 <?php require_once "footer.php"; ?>
