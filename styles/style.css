@@ -291,13 +291,7 @@ input:hover {
   }
 
   section .text {
-    position: absolute;
     top: 250px;
-    color: var(--orange-text);
-    font-size: 1.5rem;
-    user-select: none;
-    pointer-events: none;
-    animation: circular-text 12s linear infinite;
   }
 
   section .text span {
