@@ -5,8 +5,6 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-$creatorName = "TPKU";
-
 function upperCase(string $name): string
 {
     $upperCaseName = strtoupper($name);

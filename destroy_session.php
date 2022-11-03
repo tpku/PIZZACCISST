@@ -15,7 +15,7 @@ session_destroy();
 </main>
 
 <footer>
-    <p class="footer-p">PIZZACCISST by TPKU &trade;</p>
+    <p class="footer-p">PIZZACCISST by TPKU &trade; 2022</p>
 </footer>
 </body>
 

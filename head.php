@@ -4,6 +4,10 @@ declare(strict_types=1);
 if (!isset($_SESSION)) {
     session_start();
 }
+$siteName = "PIZZACCISST";
+$creatorName = "TPKU";
+$year = 2022;
+$instructions = "CHOOSE YOUR TOPPINGS AND DON'T FORGET THE BASE!";
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +25,7 @@ if (!isset($_SESSION)) {
 
 <body>
     <header>
+        <p> <?= $siteName; ?></p>
         <nav class="navbar">
             <ul>
                 <!-- <li><a href="index.php">START</a></li>

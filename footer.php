@@ -1,5 +1,5 @@
 <footer>
-    <p class="footer-p">PIZZACCISST by <?= $creatorName; ?> &trade;</p>
+    <p class="footer-p"><?= $siteName; ?> by <?= $creatorName; ?> &trade; <?= $year; ?></p>
 </footer>
 </body>
 

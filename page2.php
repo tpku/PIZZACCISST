@@ -69,7 +69,7 @@ $baker = $_SESSION["name"];
     </div>
 
     <div class="button-container">
-        <p> <?= upperCase($baker); ?>, YOU NEED A BASE BEFORE ADDING TOPPINGS!</p>
+        <p> <?= $instructions ?> </p>
         <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
             <ul class="topping-list">
                 <?php foreach ($pizzaToppings as $topping) : ?>
