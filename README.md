@@ -25,7 +25,7 @@ Amazing page. I made a splendid pizza.
 
 # Testers
 
-Tested by the following people:
+Testers:
 
 1. Tobias Åhlund
 2. Ruben Olander
