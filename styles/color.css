@@ -31,33 +31,6 @@
   }
 }
 
-/* ---- Text Spinner Gradient & Transform ---- */
-@keyframes spinner-text {
-  0% {
-    scale: 1;
-    transform: rotate3d(1, 1, 1, -360deg);
-    color: #00aaff5f;
-  }
-
-  25% {
-    color: #d900c067;
-  }
-
-  50% {
-    scale: 0.1;
-  }
-
-  75% {
-    /* transform: rotatex(360deg); */
-    color: #26008071;
-  }
-
-  100% {
-    scale: 1;
-    color: #00aaff5f;
-  }
-}
-
 /* ---- Topping Button Animation ---- */
 @keyframes topping-buttons {
   0% {

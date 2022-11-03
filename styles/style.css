@@ -24,6 +24,9 @@ body {
 
 header {
   background-color: var(--black-bg-opacity);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header ul {
@@ -43,7 +46,8 @@ main {
 
 footer {
   background-color: var(--black-bg-opacity);
-  text-align: center;
+  height: 1.4rem;
+  padding-left: 20px;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -225,10 +229,12 @@ input:hover {
 
 .button-container p {
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .button-container ul {
   padding: 0;
+  margin-top: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -251,30 +257,6 @@ input:hover {
   background-color: orangered;
   animation: topping-buttons 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) reverse
     infinite;
-}
-
-/* ---- H1 Quote Spinners ---- */
-
-.spin-container {
-  width: 100%;
-  padding: 0 20px 0 20px;
-  position: absolute;
-  bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.spinner {
-  width: 400px;
-}
-
-.spinner h1 {
-  animation: spinner-text 5s linear infinite backwards;
-}
-.spinner:last-of-type h1 {
-  animation: spinner-text 4.5s linear reverse infinite;
 }
 
 /* ---- Media querie ---- */
@@ -301,21 +283,5 @@ input:hover {
   .topping-btn {
     height: 35px;
     width: 100px;
-  }
-
-  .spin-container {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .spinner {
-    width: 450px;
-  }
-
-  .spinner:last-of-type h1 {
-    display: none;
-    animation: spinner-text 4.5s linear reverse infinite;
   }
 }

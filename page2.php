@@ -20,7 +20,7 @@ $baker = $_SESSION["name"];
     <!-- Back up containers and php code for pizza container in "backup-file" -->
     <div class="pizza-container">
         <div class="pizza">
-            <div class="pizza-base">
+            <?php if (isset($_SESSION["pizza"])) : ?>
                 <?php foreach ($_SESSION["pizza"] as $base) : ?>
                     <?php if ($base === "tomato-sauce") : ?>
                         <!-- Base tomato-sauce -->
@@ -63,12 +63,13 @@ $baker = $_SESSION["name"];
                         </div>
                     <?php endif; ?>
                 <?php endforeach; ?>
-            </div>
+            <?php endif; ?>
         </div>
+    </div>
     </div>
 
     <div class="button-container">
-        <p>ADD YOUR TOPPING!</p>
+        <p> <?= $instructions ?> </p>
         <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
             <ul class="topping-list">
                 <?php foreach ($pizzaToppings as $topping) : ?>
@@ -80,18 +81,10 @@ $baker = $_SESSION["name"];
             </ul>
         </form>
     </div>
-
-    <div class="spin-container">
-        <div class="spinner">
-            <h1>
-                <?= $_SESSION["quoteOne"] ?>
-            </h1>
-        </div>
-        <div class="spinner">
-            <h1>
-                <?= $_SESSION["quoteTwo"] ?>
-            </h1>
-        </div>
+    <div>
+        <section>
+            <p class="text"><?= $_SESSION["quoteOne"] ?></p>
+        </section>
     </div>
 </main>
 <script src="script.js"></script>
