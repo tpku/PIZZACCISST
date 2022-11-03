@@ -13,13 +13,13 @@ if (!isset($_SESSION)) {
 // echo "<pre>";
 // print_r($_SESSION);
 // echo "</pre>";
-$baker = $_SESSION["name"];
+$baker = strtoupper($_SESSION["name"]);
 $quoteOne = $_SESSION["quoteOne"];
 $quoteTwo = $_SESSION["quoteTwo"];
 ?>
 
 <main>
-    <!-- Back up containers and php code for pizza container in "backup-file" -->
+    <!-- Pizza Section -->
     <div class="pizza-container">
         <div class="pizza">
             <?php if (isset($_SESSION["pizza"])) : ?>
@@ -29,17 +29,19 @@ $quoteTwo = $_SESSION["quoteTwo"];
                         <div class="pizza-base tomato-sauce">
                             <!-- Toppings -->
                             <div class="toppings-container">
-                                <?php foreach ($_SESSION["pizza"]["topping"] as $topping) : ?>
-                                    <!-- Inline Styling to randomize Position and Rotation -->
-                                    <div class="<?= $topping ?>" style="position: absolute; 
+                                <?php if (isset($_SESSION["pizza"]["topping"])) : ?>
+                                    <?php foreach ($_SESSION["pizza"]["topping"] as $topping) : ?>
+                                        <!-- Inline Styling to randomize Position and Rotation -->
+                                        <div class="<?= $topping ?>" style="position: absolute; 
                                     top: <?= rand(1, 300); ?>px; 
                                     bottom: <?= rand(1, 300); ?>px; 
                                     left: <?= rand(1, 300); ?>px; 
                                     right: <?= rand(1, 300); ?>px;
                                     transform: rotate(<?= rand(0, 360); ?>deg);">
-                                    </div>
+                                        </div>
 
-                                <?php endforeach; ?>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
                             </div>
 
                         </div>
@@ -49,17 +51,19 @@ $quoteTwo = $_SESSION["quoteTwo"];
                         <div class="pizza-base blanco">
                             <!-- Toppings -->
                             <div class="toppings-container">
-                                <?php foreach ($_SESSION["pizza"]["topping"] as $topping) : ?>
-                                    <!-- Inline Styling to randomize Position and Rotation -->
-                                    <div class="<?= $topping ?>" style="position: absolute; 
+                                <?php if (isset($_SESSION["pizza"]["topping"])) : ?>
+                                    <?php foreach ($_SESSION["pizza"]["topping"] as $topping) : ?>
+                                        <!-- Inline Styling to randomize Position and Rotation -->
+                                        <div class="<?= $topping ?>" style="position: absolute; 
                                     top: <?= rand(1, 300); ?>px; 
                                     bottom: <?= rand(1, 300); ?>px; 
                                     left: <?= rand(1, 300); ?>px; 
                                     right: <?= rand(1, 300); ?>px;
                                     transform: rotate(<?= rand(0, 360); ?>deg);">
-                                    </div>
+                                        </div>
 
-                                <?php endforeach; ?>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
                             </div>
 
                         </div>
@@ -69,9 +73,9 @@ $quoteTwo = $_SESSION["quoteTwo"];
         </div>
     </div>
     </div>
-
+    <!-- Button Section -->
     <div class="button-container">
-        <p> <?= $instructions ?> </p>
+        <p> <?= "$baker $instructions" ?> </p>
         <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
             <ul class="topping-list">
                 <?php foreach ($pizzaToppings as $topping) : ?>
@@ -83,6 +87,7 @@ $quoteTwo = $_SESSION["quoteTwo"];
             </ul>
         </form>
     </div>
+    <!-- Circular Text Section -->
     <div>
         <section>
             <p class="text"><?= $quoteOne; ?></p>
