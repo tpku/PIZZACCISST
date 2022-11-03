@@ -223,7 +223,7 @@ input:hover {
   z-index: 999;
   position: fixed;
   max-width: 600px;
-  bottom: 100px;
+  bottom: 50px;
   width: 100%;
 }
 
