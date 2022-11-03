@@ -13,13 +13,15 @@ My first little php project! A website including a basic pizza game. Don't forge
 
 # Code Review
 
-Code review written by [Jane Doh](https://github.com/username).
+Code review written by [Siri Sjölin](https://github.com/sirisayshello).
 
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-2. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-3. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-4. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-5. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
+Amazing page. I made a splendid pizza. 
+
+1. `functions.php:8-12` - This function is never called, could probably be removed?
+2. `functions.php:16` - Is this require needed here?
+3. `functions.php:21-50` - These functions basically does the same thing, maybe call the first one twice?
+4. `index.php:31-50` - Since the conditions are the same this could be one if statement instead of two.
+5. `index.php:47-49` - Could use a link here instead since you don’t need to post any values to page2.
 
 # Testers
 
