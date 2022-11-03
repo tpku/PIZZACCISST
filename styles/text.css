@@ -76,7 +76,7 @@ button {
 
 section .text {
   position: absolute;
-  top: 260px;
+  top: 300px;
   color: var(--orange-text);
   font-size: 2rem;
   user-select: none;

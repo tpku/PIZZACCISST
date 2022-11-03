@@ -14,6 +14,8 @@ if (!isset($_SESSION)) {
 // print_r($_SESSION);
 // echo "</pre>";
 $baker = $_SESSION["name"];
+$quoteOne = $_SESSION["quoteOne"];
+$quoteTwo = $_SESSION["quoteTwo"];
 ?>
 
 <main>
@@ -83,7 +85,7 @@ $baker = $_SESSION["name"];
     </div>
     <div>
         <section>
-            <p class="text"><?= $_SESSION["quoteOne"] ?></p>
+            <p class="text"><?= $quoteOne; ?></p>
         </section>
     </div>
 </main>
