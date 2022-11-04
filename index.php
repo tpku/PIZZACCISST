@@ -12,7 +12,7 @@ if (!isset($_SESSION)) {
 if (isset($_POST["name"])) {
     $_SESSION["name"] = htmlspecialchars($_POST["name"]);
     $cleanName = ($_SESSION["name"]);
-    $inputName = upperCase($cleanName);
+    $inputName = cleanUpper($cleanName);
 }
 ?>
 <!-- Html Section -->
@@ -33,13 +33,7 @@ if (isset($_POST["name"])) {
             <?php endif; ?>
             <?php if (!empty($_POST["name"])) : ?>
                 <p class="form-section">
-                    <!-- Print if input field is empty -->
-                    <?= "MI PIACE LA PIZZA"; ?>
-                </p>
-            <?php endif; ?>
-            <?php if (!empty($_POST["name"])) : ?>
-                <p class="form-section">
-                    <!-- Print if input field got data -->
+                    <!-- Print if input field is not empty -->
                     <?= welcomeMessage($inputName); ?>
                     <!-- Execute if input field got data -->
                     <?php

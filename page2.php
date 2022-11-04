@@ -13,7 +13,9 @@ if (!isset($_SESSION)) {
 // echo "<pre>";
 // print_r($_SESSION);
 // echo "</pre>";
-$baker = strtoupper($_SESSION["name"]);
+$inputName = $_SESSION["name"];
+$baker = cleanUpper($inputName);
+$buttonParagraph = "$baker $instructions";
 $quoteOne = $_SESSION["quoteOne"];
 // $quoteTwo = $_SESSION["quoteTwo"]; // Inactivated
 ?>
@@ -75,7 +77,7 @@ $quoteOne = $_SESSION["quoteOne"];
     </div>
     <!-- Button Section -->
     <div class="button-container">
-        <p> <?= "$baker $instructions" ?> </p>
+        <p> <?= $buttonParagraph; ?> </p>
         <form method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
             <ul class="topping-list">
                 <?php foreach ($pizzaToppings as $topping) : ?>
