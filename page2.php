@@ -13,7 +13,8 @@ if (!isset($_SESSION)) {
 // echo "<pre>";
 // print_r($_SESSION);
 // echo "</pre>";
-$baker = strtoupper($_SESSION["name"]);
+$inputName = $_SESSION["name"];
+$baker = cleanUpper($inputName);
 $quoteOne = $_SESSION["quoteOne"];
 // $quoteTwo = $_SESSION["quoteTwo"]; // Inactivated
 ?>

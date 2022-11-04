@@ -5,7 +5,7 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-function upperCase($inputData): string
+function cleanUpper($inputData): string
 {
     $trimmedData = trim($inputData);
     $entitiesData = htmlentities($trimmedData);
