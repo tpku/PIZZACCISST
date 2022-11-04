@@ -6,10 +6,13 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
+// $_SESSION["name"] = upperCase($_POST["name"]);
+// $inputName = $_SESSION["name"];
 
 if (isset($_POST["name"])) {
     $_SESSION["name"] = htmlspecialchars($_POST["name"]);
-    $inputName = strtoupper($_SESSION["name"]);
+    $cleanName = ($_SESSION["name"]);
+    $inputName = upperCase($cleanName);
 }
 ?>
 <!-- Html Section -->
@@ -41,7 +44,7 @@ if (isset($_POST["name"])) {
                     <!-- Execute if input field got data -->
                     <?php
                     $_SESSION["quoteOne"] = echoGreetingOne($inputName);
-                    $_SESSION["quoteTwo"] = echoGreetingTwo($inputName);
+                    // $_SESSION["quoteTwo"] = echoGreetingTwo($inputName); // Inactivated
                     ?>
                 </p>
                 <form action="page2.php" method="post">
