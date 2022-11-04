@@ -15,7 +15,7 @@ if (!isset($_SESSION)) {
 // echo "</pre>";
 $baker = strtoupper($_SESSION["name"]);
 $quoteOne = $_SESSION["quoteOne"];
-$quoteTwo = $_SESSION["quoteTwo"];
+// $quoteTwo = $_SESSION["quoteTwo"]; // Inactivated
 ?>
 
 <main>
